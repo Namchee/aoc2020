@@ -11,7 +11,7 @@ Each folder has the following contents:
 
 ### main.rs
 
-The uncompiled solution, compile it yourself with `rustc main.rc`.
+The uncompiled solution. Compile and run it by yourself with `rustc main.rc`, don't be lazy.
 
 ### PROBLEM.md
 
@@ -28,3 +28,7 @@ Sample input
 ## Author
 
 1. Namchee - [GitHub](https://github.com/Namchee)
+
+## License
+
+Just do whatever you want with these files.
