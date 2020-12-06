@@ -9,7 +9,9 @@ fn main() {
     let mut buffer = String::new();
 
     while stdin.read_line(&mut buffer).unwrap() > 0 {
-        buffer.pop();
+        if buffer.ends_with("\n") {
+            buffer.pop();
+        }
 
         let number: i32 = buffer.parse().unwrap();
         let target: i32 = 2020 - number;
