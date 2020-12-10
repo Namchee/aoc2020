@@ -2,7 +2,7 @@
 
 My personal solution for 2020's [Advent of Code](https://adventofcode.com/) puzzles.
 
-Made solely for learning purposes. Written in [Rust](https://www.rust-lang.org/).
+Made solely for learning purposes, so these solutions are mostly late submissions. Written in [Rust](https://www.rust-lang.org/).
 
 ## Format
 
