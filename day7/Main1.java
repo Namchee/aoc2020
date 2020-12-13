@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Main {
+public class Main1 {
     static HashMap<String, ArrayList<Bag> > bags = new HashMap<>();
     static HashMap<String, Boolean> expanded = new HashMap<>();
 
