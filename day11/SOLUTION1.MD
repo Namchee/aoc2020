@@ -1,0 +1,6 @@
+# Solution
+
+Just simulate it, it's suprisingly fast enough.
+
+### Time Complexity: ? -> hard to determine
+### Space Complexity: O(n) -> For each simulation, we need to store all the cells
