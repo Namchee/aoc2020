@@ -1,3 +1,4 @@
+use std::time::Instant;
 use std::io;
 use std::vec::Vec;
 
@@ -30,6 +31,8 @@ fn main() {
         (1, 1),
         (-1, -1)
     ];
+
+    let start = Instant::now();
 
     loop {
         let mut changes = Vec::new();
@@ -102,5 +105,5 @@ fn main() {
         }
     }
 
-    println!("{}", res);
+    println!("{} {}ms", res, start.elapsed().as_millis());
 }

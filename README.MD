@@ -19,13 +19,11 @@ The uncompiled solution for part 1 of the puzzle. Compile and run it by yourself
 
 The uncompiled solution for part 2 of the puzzle. Compile and run it by yourself with the compiler, don't be lazy.
 
-### PROBLEM.md
-
-Problem statement, directly copy-pasted from [Advent of Code](https://adventofcode.com/) with some markdown formattings.
-
 ### SOLUTION1.md
 
 Explanation about how to solve the first part of the puzzle, with complexities. If the solution doesn't have an explanation, it's unfinished.
+
+> Link to the problem statement will be provided in this file.
 
 ### SOLUTION2.md
 

@@ -1,5 +1,7 @@
 # Solution
 
+[Problem Statement](https://adventofcode.com/2020/day/1)
+
 Pretty much straight-forward.
 
 The easiest and fastest way to do this is to utilize the `HashSet` data structure to store all the inputs and facilitate number search.
