@@ -41,14 +41,25 @@ fn main() {
                         let mut will_change = true;
 
                         for loo in loops.iter() {
-                            let cur_x = i as i16 + loo.0;
-                            let cur_y = j as i16 + loo.1;
+                            let add_x = loo.0;
+                            let add_y = loo.1;
 
-                            if cur_x >= 0 && cur_y >= 0 &&
-                                cur_x < (x_len as i16) && cur_y < (y_len as i16) &&
-                                arr[cur_x as usize][cur_y as usize] == '#' {
-                                    will_change = false;
-                                    break;
+                            let mut cur_x = i as i16 + add_x;
+                            let mut cur_y = j as i16 + add_y;
+
+                            while cur_x >= 0 && cur_y >= 0 &&
+                                cur_x < (x_len as i16) && cur_y < (y_len as i16) {
+                                    match arr[cur_x as usize][cur_y as usize] {
+                                        'L' => break,
+                                        '#' => {
+                                            will_change = false;
+                                            break;
+                                        },
+                                        _ => (),
+                                    }
+
+                                    cur_x += add_x;
+                                    cur_y += add_y;
                                 }
                         }
 
@@ -60,17 +71,29 @@ fn main() {
                         let mut sum = 0;
 
                         for loo in loops.iter() {
-                            let cur_x = i as i16 + loo.0;
-                            let cur_y = j as i16 + loo.1;
+                            let add_x = loo.0;
+                            let add_y = loo.1;
 
-                            if cur_x >= 0 && cur_y >= 0 &&
-                                cur_x < (x_len as i16) && cur_y < (y_len as i16) &&
-                                arr[cur_x as usize][cur_y as usize] == '#' {
-                                    sum += 1;
+                            let mut cur_x = i as i16 + add_x;
+                            let mut cur_y = j as i16 + add_y;
+
+                            while cur_x >= 0 && cur_y >= 0 &&
+                                cur_x < (x_len as i16) && cur_y < (y_len as i16) {
+                                    match arr[cur_x as usize][cur_y as usize] {
+                                        'L' => break,
+                                        '#' => {
+                                            sum += 1;
+                                            break;
+                                        },
+                                        _ => (),
+                                    }
+
+                                    cur_x += add_x;
+                                    cur_y += add_y;
                                 }
                         }
 
-                        if sum >= 4 {
+                        if sum >= 5 {
                             changes.push((i, j));
                         }
                     },
