@@ -13,5 +13,5 @@ y = x * sin(angle) + y * cos(angle)
 
 The second important point is **DO NOT** convert the floating point directly to integers, call `round()` first. Without rounding the value, the rotation result is **wrong**.
 
-### Time Complexity: O(n)
+### Time Complexity: O(1)
 ### Space Complexity: O(1)

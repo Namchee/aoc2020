@@ -4,5 +4,5 @@
 
 Just simulate it. To make it easier, store the waypoint increment values in an array. For `L`, we can count it as `R` by substracting 360 with the actual degree.
 
-### Time Complexity: O(n) -> we need to process every input
+### Time Complexity: O(1)
 ### Space Complexity: O(1)
