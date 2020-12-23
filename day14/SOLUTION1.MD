@@ -14,7 +14,11 @@ In short, the above code can be written in one-liner solution as:
 value = (value & ~(1 << n)) | (x << 1)
 ```
 
-> I think there's a simpler solution than this, but this is much easier to understand IMO.
+> I think there's a simpler solution than this, but this is much easier to understand for me.
+
+## Notes
+
+1. Do not store the 36-bit address in an array, it will cause your program to crash immediately when allocating the memory.
 
 ### Time Complexity: O(1)
-### Space Complexity: O(1)
+### Space Complexity: O(n)
